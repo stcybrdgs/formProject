@@ -1,0 +1,48 @@
+#mainDiv{
+    margin: 0 auto;
+    text-align:center;
+    width:902px;
+    height:100%;
+    //border:1px solid blue;
+}
+#bannerDiv{
+}
+.margin, .separator{
+	float:left;
+	width:20px;	
+	background-color: #FFFFCC;	
+}
+.separator{
+	border-left:1px solid rgb(124, 124, 124);
+}
+#leftDiv{
+	float:left;
+	width:300px;
+
+}
+#rightDiv{
+	float:left;
+	width:520;
+}
+#bannerDiv, #footerDiv{
+	clear:left;	
+	height:60px;	
+	background-image:url("images/border.jpg");	
+}
+#leftDiv, #rightDiv, .margin, .separator{
+	height:800px;
+}
+#leftMenu{
+	list-style-type:none;
+	border:1px solid blue;
+	text-indent:-200px;
+}
+#badge{
+	position:relative;
+	top:-60px;
+	left:60px;
+	height:100px;
+	width:100px;
+	background-color: gray;
+	border:1px solid black;	
+}

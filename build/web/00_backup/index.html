@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Processing with JSP</title>
+        <link rel="stylesheet" type="text/css" href="css-2.css">	
+        <script src="formArrays.js"></script> 
+        <script>
+            function formReset(x){
+                document.getElementById("vehicleForm").reset(); 
+                setFormOptions(x);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="mainDiv">
+            <header>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JSP Samples</h3>
+                <img src="images/border.jpg" alt="">
+                <menu id="topMenu">
+                    <a href="index.html">
+                        &nbsp;&nbsp;&nbsp;
+                            Form Sample 1
+                        &nbsp;&nbsp;&nbsp;
+                    </a>
+                    |
+                    <a href="">
+                        &nbsp;&nbsp;&nbsp;
+                            Form Sample 2
+                        &nbsp;&nbsp;&nbsp;
+                    </a>
+                    |
+                    <a href="">
+                        &nbsp;&nbsp;&nbsp;
+                            Cookie Sample
+                        &nbsp;&nbsp;&nbsp;
+                    </a>                
+                </menu>
+                 <div id="ribbonDiv">
+                    <br>
+                    <a href="http://www.stacybridges.com" target="_blank" title="stacybridges.com">
+                        <img src="images/penCup.jpg" alt="">
+                    </a>
+                    <br><br>                    
+                    stacy bridges
+                    <img src="images/ribbonTail.jpg" alt="">
+                </div>   
+            </header>
+            <div id="leftMenu">
+                NAVIGATION MENU
+                <br><br>
+                <ul>                
+                    <li><a href="">&nbsp; stacybridges.com</a></li>
+                    <li><a href="">&nbsp; stacymusic.com</a></li>
+                    <li><a href="">&nbsp; mipsops.com</a></li>
+                    <li><a href="">&nbsp; fretmachine.com</a></li>
+                    <li><a href="">&nbsp; JSP Samples</a></li>
+                    <li><a href="">&nbsp; GitHub</a></li>
+                </ul>
+            </div>
+            <div id="formDiv">
+                <br>
+                <article>
+                    <h2>Caproni-Edsel Airplane &amp; Automobile Co.</h2>
+                    <hr>
+                    In the form below, select a <strong>Vehicle Type</strong>, and enter your information.<br>
+                    When you are finished, click the <strong>Submit</strong> button.<br><br>
+                    Please allow 2-3 business days for processing.
+                    <br><br>
+                    <hr>
+                </article>
+                <br>
+                <form action="form-processor-one.jsp" method="POST" id="vehicleForm">
+                    <table id="formTable">
+                        <tr>
+                            <td colspan="2">
+                                <div id="formTitles">
+                                    <h3>Vehicle Type:</h3>
+                                    &nbsp;
+                                    <input type="radio" name="vehicle" value="air" title="airplane" 
+                                           checked onclick="setFormOptions(0)">
+                                    Aircraft
+                                    <br>
+                                    &nbsp;	                    
+                                    <input type="radio" name="vehicle" value="car" title="automobile" 
+                                           onclick="setFormOptions(1)">
+                                    Automobile
+                                    &nbsp;
+                                    <br><br>
+                                    <h3 id="vehicle">Airplane Info:</h3>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Manufacturer:</td>
+                            <td>
+                                <select class="formBox" name="Manufacturer" id="man">
+                                    <option value="cantilever">Cantilever Aero Company</option>
+                                    <option value="caproni">Caproni Aviation</option>
+                                    <option value="douglas">Douglas Aircraft</option>
+                                    <option value="brewster">Brewster Aeronautical</option>									
+                                </select>
+                            </td>			
+                        </tr>
+                        <tr>
+                            <td>Model:</td>
+                            <td>
+                                <select class="formBox" name="Model" id="model">
+                                    <option value="bullet">Christmas Bullet</option>
+                                    <option value="noviplano">Ca.60 Noviplano</option>
+                                    <option value="devastator">TBD Devastator</option>
+                                    <option value="buffalo">F2A Buffalo</option>
+                                </select>
+                            </td>					
+                        </tr>
+                        <tr>
+                            <td>Year:</td>
+                            <td>
+                                <select class="formBox" name="Year" id="year">
+                                    <option value="1918">1918</option>
+                                    <option value="1921">1921</option>
+                                    <option value="1937">1937</option>		
+                                    <option value="1938">1938</option>																	
+                                </select>
+                            </td>			
+                        </tr>
+                        <tr>
+                            <td>Reason for Inquiry:</td>
+                            <td>
+                                <textarea class="formArea" name="inquiryInfo"></textarea>
+                            </td>					
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Submit">
+                                <br><br>
+                                <button type="button" value="Reset" onclick="formReset(0)">
+                                    Reset&nbsp;
+                                </button>
+                                <br><br>
+                            </td>	
+                            <td></td>                            
+                        </tr>
+                    </table>					
+                </form>	
+                <br><br><br>
+            </div><!-- end formDiv -->
+        <footer>
+            <br>
+            &copy;&nbsp;2015 &nbsp;&nbsp;Stacy Bridges
+        </footer>
+        </div><!-- end mainDiv -->  
+        <script>
+            // clear form on page load or page refresh:
+            document.getElementById("vehicleForm").reset();     
+        </script>
+    </body>
+</html>

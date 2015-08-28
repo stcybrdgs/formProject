@@ -1,0 +1,182 @@
+<!-- 
+    this file provides code for the About page (about.html) for the
+    JSP Form Project
+    Copyright 2015, Stacy Bridges
+)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Page</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">	
+    </head>
+    <body>
+    	<div id="mainDiv">
+            <!-- title -->
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JSP Form Project</h3>    
+            
+            <!-- banner -->
+            <div id="bannerDiv">
+                <menu id="topMenu">
+                    <a href="about.html" title="You're on the About Page">
+                        &nbsp;&nbsp;&nbsp;
+                        About
+                        &nbsp;&nbsp;&nbsp;
+                    </a>
+                    &nbsp;|
+                    <a href="demo.html" title="Go to the JSP Form Demo">
+                        &nbsp;&nbsp;&nbsp;
+                        JSP Form Demo
+                        &nbsp;&nbsp;&nbsp;
+                    </a>
+                </menu>
+            </div>
+
+            <div class="margin"></div>
+            
+            <!-- leftDiv: left-most column of the page -->
+            <div id="leftDiv">
+                <!-- display the ribbon -->
+                <div id="ribbonDiv">
+                    <br>
+                    <a href="http://www.stacybridges.com" target="_blank" title="www.stacybridges.com">
+                        <img src="images/penCup.jpg" alt="">
+                    </a>
+                    <br><br>                    
+                    stacy bridges
+                    <img src="images/ribbonTail.jpg" alt="">
+                </div>
+                
+                <!-- display the secondary nav menu in the left-hand column -->
+                <div id="leftMenu">
+                    <span class="menuHeading" title="View my other Projects">
+                        <u>OTHER PROJECTS</u>                    
+                    </span>
+                    <ul>
+                        <li>
+                            <a href="http://www.stacybridges.com" target="_blank" title="www.stacybridges.com">                                
+                                &nbsp; stacybridges.com
+                            </a>    
+                        </li>
+                        <li>
+                            <a href="http://mipsops.com" target="_blank" title="www.mipsops.com">                                
+                                &nbsp; mipsops.com
+                            </a>    
+                        </li>     
+                        <li>
+                            <a href="https://github.com/stcybrdgs" target="_blank" title="github.com/stcybrdgs">                                
+                                &nbsp; GitHub
+                            </a>    
+                        </li>                        
+                    </ul>
+                </div><!-- end leftMenu -->
+                <br>
+                <div id="docMenu">
+                    <span class="menuHeading" title="View PDFs of the code for this Project">
+                        <u>THIS PROJECT</u>                    
+                    </span>
+                        <ul>                
+                        <li>
+                            <a href="docs/demoHTML.pdf" target="_blank" title="demo.html"> 
+                                &nbsp;                                   
+                            <img src="images/pdfIconSmall.png" alt="PDF Download" class="pdfIcon">  
+                                &nbsp;html
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="docs/stylesCSS.pdf" target="_blank" title="styles.css">   
+                                &nbsp;                                   
+                            <img src="images/pdfIconSmall.png" alt="PDF Download" class="pdfIcon">                             
+                                &nbsp;css
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                
+                            </a>
+                        </li>            
+                        <li>
+                            <a href="docs/formProcessorJSP.pdf" target="_blank" title="formProcessor.jsp">
+                                &nbsp;                              
+                            <img src="images/pdfIconSmall.png" alt="PDF Download" class="pdfIcon">                             
+                                &nbsp;jsp
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                               
+                            </a>
+                        </li>
+                        <li>
+                            <a href="docs/formArraysJS.pdf" target="_blank" title="formArrays.js">
+                                &nbsp;
+                                <img src="images/pdfIconSmall.png" alt="PDF Download" class="pdfIcon">                             
+                                &nbsp;javascript
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                            </a>
+                        </li>                           
+                    </ul>
+                </div><!-- end docMenu -->                
+            </div><!-- end leftDiv -->
+            
+            <div class="margin"></div>            
+            <div class="separator"></div>	        
+                
+            <div id="rightDiv">
+                <div id="rightDivContent">
+                    <article>
+                        <h1>About my JSP Form Project</h1>
+                        <hr>
+                        <br>
+                        This project demonstrates how the JavaServer Pages (<strong>JSP</strong>) 
+                        technology may be used to perform server-side processing on a simple 
+                        HTML Form.
+                        <br><br>
+                        To go to the demo, click <strong>JSP Form Demo</strong>
+                        in the above menu (or click
+                        <a href="demo.html" class="regLink" title="Go to the JSP Form Demo">
+                            here</a>).
+                            <br><br>
+                        <hr>
+                        <br>
+                        One advantage in using JSP for web applications is that it provides for 
+                        <strong>server-side</strong> functionality as well as Object Oriented Programming 
+                        (<strong>OOP</strong>) techniques. Such flexibility allows web developers who enjoy Java to cover a lot of bases
+                        with just one language.
+                        <br><br>
+                        
+                        This project is being staged from <strong>OpenShift Online</strong>, which is a Platform as a Service 
+                        (<strong>PaaS</strong>) provided by <strong>Red Hat</strong>. It allows developers to focus their 
+                        time and energy on building applications
+                        without having to fret over the server administration details.
+                        <br><br>
+                        
+                        This project has no database on the back-end, so Javascript was used to 
+                        generate the drop menus and the confirmation key.
+                        <br><br>
+                        
+                        The code for this project is posted in the menu area to your left. Feel free to 
+                        view it in your browser or to print it at your discretion.
+                        <br><br>
+                        
+                        To learn more about JSP or OpenShift, visit:
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#9830;&nbsp;
+                        <a href="http://www.oracle.com/technetwork/java/overview-138580.html" target=_blank" class="regLink"
+                           title="See the Oracle JSP Pages Overview">
+                            Oracle's JSP Overview
+                        </a>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&#9830;&nbsp;
+                        <a href="https://www.openshift.com/" class="regLink" target="_blank"
+                           title="Visit the OpenShift website">
+                           OpenShift Online
+                        </a>
+                        <br><br><br>
+                        Thanks for visiting!
+                        <br><br><br>
+                        <strong>Stacy Bridges</strong>
+                    </article>
+                </div><!-- end rightDivContent -->    
+            </div><!-- end rightDiv -->
+
+            <footer>
+                <br>
+                &copy;&nbsp;2015 &nbsp;&nbsp;Stacy Bridges
+            </footer>
+
+    	</div><!-- end mainDiv -->
+    </body>
+</html>

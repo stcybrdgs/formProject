@@ -1,0 +1,111 @@
+                <form>
+                    <table id="formTable">
+                        <tr>
+                            <td colspan="2">
+                                <div id="formTitles">                                
+                                    <h3>Confirmation number:</h3>    
+                                    <br><br>
+                                    <h3>Inquiry Information:</h3>     
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Manufacturer:</td>
+                            <td><%= Manufacturer %></td>			
+                        </tr>
+                        <tr>
+                            <td>Model:</td>
+                            <td><%= Model %></td>					
+                        </tr>
+                        <tr>
+                            <td>Year:</td>
+                            <td><%= Year %></td>					
+                        </tr>
+                        <tr>
+                            <td>Inquiry Info:</td>
+                            <td><%= inquiryInfo %></td>					
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="submitButton">
+                                &nbsp;&nbsp;
+                                <button type="button" value="Reset" onclick="window.location.href='index.html'">
+                                    Back to Caproni-Edsel
+                                </button>
+                                <br><br>
+                            </td>		
+                        </tr>                        
+                    </table>
+                </form>	 
+
+===================================
+<tr>
+                            <td colspan="2">
+                                <div id="formTitles">
+                                    <h3>Vehicle Type:</h3>
+                                    &nbsp;
+                                    <input type="radio" name="vehicle" value="air" title="airplane" 
+                                           checked onclick="setFormOptions(0)">
+                                    Aircraft
+                                    <br>
+                                    &nbsp;	                    
+                                    <input type="radio" name="vehicle" value="car" title="automobile" 
+                                           onclick="setFormOptions(1)">
+                                    Automobile
+                                    &nbsp;
+                                    <br><br>
+                                    <h3 id="vehicle">Airplane Info:</h3>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Manufacturer:</td>
+                            <td>
+                                <select class="formBox" name="Manufacturer" id="man">
+                                    <option value="cantilever">Cantilever Aero Company</option>
+                                    <option value="caproni">Caproni Aviation</option>
+                                    <option value="douglas">Douglas Aircraft</option>
+                                    <option value="brewster">Brewster Aeronautical</option>									
+                                </select>
+                            </td>			
+                        </tr>
+                        <tr>
+                            <td>Model:</td>
+                            <td>
+                                <select class="formBox" name="Model" id="model">
+                                    <option value="bullet">Christmas Bullet</option>
+                                    <option value="noviplano">Ca.60 Noviplano</option>
+                                    <option value="devastator">TBD Devastator</option>
+                                    <option value="buffalo">F2A Buffalo</option>
+                                </select>
+                            </td>					
+                        </tr>
+                        <tr>
+                            <td>Year:</td>
+                            <td>
+                                <select class="formBox" name="Year" id="year">
+                                    <option value="1918">1918</option>
+                                    <option value="1921">1921</option>
+                                    <option value="1937">1937</option>		
+                                    <option value="1938">1938</option>																	
+                                </select>
+                            </td>			
+                        </tr>
+                        <tr>
+                            <td>Reason for Inquiry:</td>
+                            <td>
+                                <textarea class="formArea" name="inquiryInfo"></textarea>
+                            </td>					
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="submitButton">
+                                <input type="submit" value="Submit">
+                                &nbsp;&nbsp;
+                                <button type="button" value="Reset" onclick="formReset(0)">
+                                    Reset
+                                </button>
+                                <br><br>
+                            </td>		
+                        </tr>
+                    </table>

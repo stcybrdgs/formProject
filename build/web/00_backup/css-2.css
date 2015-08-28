@@ -1,0 +1,118 @@
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+header{
+    position:relative;
+    top:-10px;
+}
+#mainDiv{
+    width:900px;
+    margin: 0 auto;
+    text-align:left;
+    height:840px;
+}
+#topMenu{
+    position:relative;
+    top:-60px;
+    left:400px;
+    color:white;
+}
+#topMenu a{
+    text-decoration:none;
+    color:white;
+}
+#topMenu a:hover{
+    color:rgb(51, 51, 51);
+    background-color:white;
+}
+#ribbonDiv{
+    text-align:center;
+    color:white;
+    background-color:rgb(124, 124, 124);
+    width:150px;
+    height:180px;
+    position:relative;
+    top:-114px;
+    left:20px;
+}
+#leftMenu{
+    position:relative;
+    left:20px;
+    top:-60px;
+    width:160px;
+    float:left;
+}
+#leftMenu ul{
+    position:relative;
+    list-style-type:none;
+    left:-42px;
+    width:150px;
+}
+#leftMenu li{
+    height:24px;
+}
+a{
+    text-decoration:none;
+}
+#leftMenu a:hover,li:hover{
+    color:white;
+    background-color:rgb(124, 124, 124);
+}
+article{
+    position:relative;
+    left: 40px;
+    width:90%;
+}
+#formTitles{
+    text-align:left;
+}
+#formDiv, #confirmDiv{
+    border-left:1px solid rgb(124, 124, 124);
+    position:relative;
+    left:40px;
+    top:-244px;
+    float:left;
+    width:660px;
+      
+    /*--add a linear gradient with linear-gradient(starting position, from color, to color)--*/
+    /*-- here, 'transparent' replaces a color so as to merge the gradient with the background --*/
+    background: -webkit-linear-gradient(right, transparent, #F7F8E0);
+    background: -moz-linear-gradient(top, transparent, #F7F8E0);
+    background: -ms-linear-gradient(bottom right, transparent, #F7F8E0);
+}
+form{
+    width: 400px;
+}
+td {
+    padding: 10px 18px 0px 0px;
+}
+td:first-child {
+    vertical-align: top;
+    text-align: right;
+}
+form {
+    position: relative;
+    left: 60px;
+}
+.formBox{
+    width:300px;
+}
+.formArea{
+    width:300px;
+    height:150px;
+}
+#formTable, #confirmTable{
+    border:1px solid red;//rgb(124, 124, 124);
+    width:400px;
+    padding:0px 80px 20px 20px;
+}
+footer{
+    text-align:center;
+    background-image:url("images/border.jpg");
+    height:60px;
+    color:white;
+    clear:both;
+    position:relative;
+    top:-244px; 
+}
