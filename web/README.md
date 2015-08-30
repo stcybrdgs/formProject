@@ -1,14 +1,6 @@
 #The 'web/' folder
 
-Within this folder, I created the core code for my JSP project from scratch, including the following files:
-- about.html
-- demo.html
-- formArrays.js
-- formProcessor.jsp
-- index.html
-- styles.css
-- docs/
-- images/
+Within this folder, I created the core code for my JSP project from scratch, including all HTML, CSS, JavaScript, and JSP. The 'docs/' and 'images/' folders contain my work to provide the .jpeg and .pdf features. 
 
 The material in the folder 'twoColumnLayout/' was my first run at the div layout I eventually used for the site.
 
