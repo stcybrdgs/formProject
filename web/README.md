@@ -1,4 +1,4 @@
-#The 'web/' folder
+#Core Code
 
 Within this folder, I created the core code for my JSP project from scratch, including all HTML, CSS, JavaScript, and JSP. The 'docs/' and 'images/' folders contain my work to provide the .jpeg and .pdf features. 
 
