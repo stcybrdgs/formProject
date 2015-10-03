@@ -9,3 +9,4 @@ I built this project with HTML, CSS, JavaScript, and JSP. I developed it locally
 The folder structure in this repo is from a NetBeans build. The **['web/'](web/)** folder is the one that contains my code work. 
 
 You may view this project online at **[OpenShift](http://jspformproject-accjavabridges.rhcloud.com/about.html)**.
+(Note: there may be a slow load time while OpenShift spins up the environment on this project).
