@@ -1,4 +1,4 @@
-#[jspFormProject](http://jspformproject-accjavabridges.rhcloud.com/about.html)
+#[formProject_JSP](http://jspformproject-accjavabridges.rhcloud.com/about.html)
 This web project demos how to use JSP to perform server-side processing on a simple HTML form.
 
 I built this project with HTML, CSS, JavaScript, and JSP. I developed it locally using: 
